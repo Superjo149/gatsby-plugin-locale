@@ -1,6 +1,6 @@
 # gatsby-starter-default-intl
 
-The default Gatsby starter using `gatsby-plugin-intl` for i18n.
+The default Gatsby starter using `gatsby-plugin-locale` for i18n.
 
 ## Features
 
@@ -18,7 +18,7 @@ The default Gatsby starter using `gatsby-plugin-intl` for i18n.
 
 ## How it works
 
-Please visit [https://github.com/wiziple/gatsby-plugin-intl](https://github.com/wiziple/gatsby-plugin-intl) for more details.
+Please visit [https://github.com/wiziple/gatsby-plugin-locale](https://github.com/wiziple/gatsby-plugin-locale) for more details.
 
 ## License
 

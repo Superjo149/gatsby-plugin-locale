@@ -49,6 +49,7 @@ exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
     languages = ["en"],
     defaultLanguage = "en",
     redirect = false,
+    ignoredPaths = [],
   } = pluginOptions
 
   const getMessages = (path, language) => {
@@ -61,7 +62,7 @@ exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
       if (error.code === "MODULE_NOT_FOUND") {
         process.env.NODE_ENV !== "test" &&
           console.error(
-            `[gatsby-plugin-intl] couldn't find file "${path}/${language}.json"`
+            `[gatsby-plugin-locale] couldn't find file "${path}/${language}.json"`
           )
       }
 
@@ -96,6 +97,7 @@ exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
   createPage(newPage)
 
   languages.forEach(language => {
+    if (ignoredPaths.find(path => path.includes(page.path))) return false
     const localePage = generatePage(true, language)
     const regexp = new RegExp("/404/?$")
     if (regexp.test(localePage.path)) {
