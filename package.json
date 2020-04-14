@@ -2,9 +2,9 @@
   "name": "gatsby-plugin-locale",
   "description": "Gatsby plugin to add react-intl onto a site",
   "version": "0.3.3",
-  "author": "Daewoong Moon <wiziple@gmail.com>",
+  "author": "Habichat <hello@habi.chat>",
   "bugs": {
-    "url": "https://github.com/wiziple/gatsby-plugin-locale"
+    "url": "https://github.com/habichat/gatsby-plugin-locale"
   },
   "dependencies": {
     "@babel/runtime": "^7.8.4",
@@ -24,7 +24,7 @@
     "rimraf": "^3.0.2",
     "webpack": "^4.42.1"
   },
-  "homepage": "https://github.com/wiziple/gatsby-plugin-locale",
+  "homepage": "https://github.com/habichat/gatsby-plugin-locale",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -38,7 +38,7 @@
   "peerDependencies": {
     "gatsby": "^2.0.0"
   },
-  "repository": "https://github.com/wiziple/gatsby-plugin-locale",
+  "repository": "https://github.com/habichat/gatsby-plugin-locale",
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
     "prepare": "cross-env NODE_ENV=production npm run build",
